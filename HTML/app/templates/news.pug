@@ -1,0 +1,44 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Новости';
+    - var pageTtl = 'Последние новости';
+
+block title
+    title=pageTtl
+
+block content
+    .workarea
+        .page.page-inner
+            .container
+                .page-wrapper
+                    .page-content
+                        .page__ttl
+                            h1=pageTtl
+                        .news-list
+                            a.news-list__item(href="news1.html")
+                                .news-list__img(style="background-image:url('images/TEMP/img1.jpg')")
+                                .news-list__content
+                                    .news-list__date 14.05.2018
+                                    .news-list__prev Акция «Московская недели профилактики ВИЧ-инфекции», приуроченная ко Всемирному дню памяти умерших от СПИДа
+
+                            a.news-list__item(href="news2.html")
+                                .news-list__img(style="background-image:url('images/TEMP/img2.jpg')")
+                                .news-list__content
+                                    .news-list__date 10.05.2018
+                                    .news-list__prev Акция Департамента здравоохранения города Москвы, приуроченная к Всемирному дню борьбы с артериальной гипертонией
+
+                            a.news-list__item(href="news3.html")
+                                .news-list__img(style="background-image:url('images/TEMP/img3.jpg')")
+                                .news-list__content
+                                    .news-list__date 27.04.2018
+                                    .news-list__prev Дорогие ветераны! Коллектив НИИ СП им. Н.В. Склифосовского ДЗМ сердечно поздравляет Вас с 73-й годовщиной Победы в Великой Отечественной войне.
+                        .bottom-banner
+                            .bottom-banner__ttl Подготовка к проведению УЗИ органов брюшной полости
+                            .bottom-banner__txt.
+                                В целях обеспечения максимальной точности и достоверности результатов в течение суток, предшествующих исследованию, необходимо соблюдать специальную диету. Следует исключить  всё, что способствует избыточному газообразованию: сырые овощи, квашеную капусту, бобовые, чёрный хлеб, соки, газированные напитки.  Исследование обычно проводится натощак. Перед исследованием желательно не курить, не сосать леденцов,
+                                не жевать жевательную резинку.
+                    .page-sidebar
+                        include blocks/_last-news
+
+    //end workarea

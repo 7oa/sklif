@@ -1,0 +1,151 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Каталог услуг';
+
+block title
+    title=activeMenu
+
+block content
+    .workarea
+        .page
+            .container
+                .page-wrapper
+                    .page-content
+                        .services
+                            .services__top
+                                .services__ttl.center=activeMenu
+                                .services__search
+                                    .index-r1__search
+                                        form.search-line
+                                            input.search-line__submit(type="submit" value="")
+                                            input.search-line__input(type="text" placeholder="Поиск услуги или врача")
+                                    .index-r1__menu
+                                        ul.search-menu
+                                            li.search-menu__li
+                                                a.search-menu__link(href="#") Анализы
+                                            li.search-menu__li
+                                                a.search-menu__link(href="#") Диагностика
+                                            li.search-menu__li
+                                                a.search-menu__link(href="#") Констультации
+                                            li.search-menu__li
+                                                a.search-menu__link(href="#") Лечение
+                                            li.search-menu__li
+                                                a.search-menu__link(href="#") Комплексное лечение
+                                            li.search-menu__li
+                                                a.search-menu__link(href="#") Операции
+                                .services__categories
+                                    .services__item
+                                        .services__item-ttl Анализы
+                                        ul.services__item-list
+                                            li
+                                                a(href="service1.html") ИФА-диагностика
+                                            li
+                                                a(href="service1.html") Биохимические и клинические исследования
+                                            li
+                                                a(href="service1.html") Исследование гормонов и онкомаркеров
+                                            li
+                                                a(href="service1.html") Иммунологические исследования
+                                            li
+                                                a(href="service1.html") Экспресс-анализы (1-2 часа)
+                                            li
+                                                a(href="service1.html") Бактериологические исследования
+                                            li
+                                                a(href="service1.html") Анализы мочи и кала
+                                            li
+                                                a(href="service1.html") Коагулограмма
+                                            li
+                                                a(href="service1.html") ПЦР-исследования
+                                            li
+                                                a(href="service1.html") Иммунологическое типирование тканей и клеток
+                                            li
+                                                a(href="service1.html") Химико-токсикологические исследования
+                                            li
+                                                a(href="service1.html") Гистологические исследования
+                                    .services__item
+                                        .services__item-ttl Диагностика
+                                        ul.services__item-list
+                                            li
+                                                a(href="service1.html") ЭКГ
+                                            li
+                                                a(href="service1.html") КТ-МРТ
+                                            li
+                                                a(href="service1.html") Центр радиохирургии (МРТ 3 Тесла)
+                                            li
+                                                a(href="service1.html") УЗИ-исследования
+                                            li
+                                                a(href="service1.html") Эндоскопические исследования
+                                            li
+                                                a(href="service1.html") Неврология
+                                            li
+                                                a(href="service1.html") Рентгенология
+                                            li
+                                                a(href="service1.html") Функциональная диагностика (Лаборатория клинической физиологии)
+                                            li
+                                                a(href="service1.html") Лаборатория нейрофизиологии
+                                            li
+                                                a(href="service1.html") Неотложная нейрохирургия
+                                    .services__item
+                                        .services__item-ttl Анализы
+                                        ul.services__item-list
+                                            li
+                                                a(href="service1.html") ИФА-диагностика
+                                            li
+                                                a(href="service1.html") Биохимические и клинические исследования
+                                            li
+                                                a(href="service1.html") Исследование гормонов и онкомаркеров
+                                            li
+                                                a(href="service1.html") Иммунологические исследования
+                                            li
+                                                a(href="service1.html") Экспресс-анализы (1-2 часа)
+                                            li
+                                                a(href="service1.html") Бактериологические исследования
+                                            li
+                                                a(href="service1.html") Анализы мочи и кала
+                                            li
+                                                a(href="service1.html") Коагулограмма
+                                            li
+                                                a(href="service1.html") ПЦР-исследования
+                                            li
+                                                a(href="service1.html") Иммунологическое типирование тканей и клеток
+                                            li
+                                                a(href="service1.html") Химико-токсикологические исследования
+                                            li
+                                                a(href="service1.html") Гистологические исследования
+                                    .services__item
+                                        .services__item-ttl Диагностика
+                                        ul.services__item-list
+                                            li
+                                                a(href="service1.html") ЭКГ
+                                            li
+                                                a(href="service1.html") КТ-МРТ
+                                            li
+                                                a(href="service1.html") Центр радиохирургии (МРТ 3 Тесла)
+                                            li
+                                                a(href="service1.html") УЗИ-исследования
+                                            li
+                                                a(href="service1.html") Эндоскопические исследования
+                                            li
+                                                a(href="service1.html") Неврология
+                                            li
+                                                a(href="service1.html") Рентгенология
+                                            li
+                                                a(href="service1.html") Функциональная диагностика (Лаборатория клинической физиологии)
+                                            li
+                                                a(href="service1.html") Лаборатория нейрофизиологии
+                                            li
+                                                a(href="service1.html") Неотложная нейрохирургия
+                            .promo
+                                a.promo__item(href="#")
+                                    img(src="images/promo1.jpg")
+                                a.promo__item(href="#")
+                                    img(src="images/promo2.jpg")
+                                a.promo__item(href="#")
+                                    img(src="images/promo3.jpg")
+                                a.promo__item(href="#")
+                                    img(src="images/promo4.jpg")
+                                a.promo__item(href="#")
+                                    img(src="images/promo5.jpg")
+                                a.promo__item(href="#")
+                                    img(src="images/promo6.jpg")
+    //end workarea

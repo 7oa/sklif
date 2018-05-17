@@ -1,0 +1,25 @@
+.page{
+  padding-top: 60px;
+  padding-bottom: 20px;
+  &__ttl{
+    color: $gray-29;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+}
+.page-inner{
+  background-color: $white;
+}
+.page-wrapper{
+  display: flex;
+}
+.page-content{
+  flex: 1 1 auto;
+}
+.page-sidebar{
+  width: 290px;
+  flex: 0 0 auto;
+  margin-left: 30px;
+}

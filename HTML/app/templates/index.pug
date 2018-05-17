@@ -1,13 +1,131 @@
 extends core/_template
 
 append sharedVars
-	- var activeMenu = 'Главная';
+    - var activeMenu = 'Научно-исследовательский институт скорой помощи им. Н. В. Склифосовского';
 
 block title
-	title=activeMenu
+    title=activeMenu
 
 block content
-	.workarea
-		h1=activeMenu
-
-	//end workarea
+    .workarea
+        .page.page-index
+            .container
+                .index-r1
+                    .index-r1__img(style="background-image:url('images/building.png')")
+                    .index-r1__search
+                        form.search-line
+                            input.search-line__submit(type="submit" value="")
+                            input.search-line__input(type="text" placeholder="Поиск услуги или врача")
+                    .index-r1__menu
+                        ul.search-menu
+                            li.search-menu__li
+                                a.search-menu__link(href="#") Анализы
+                            li.search-menu__li
+                                a.search-menu__link(href="#") Диагностика
+                            li.search-menu__li
+                                a.search-menu__link(href="#") Констультации
+                            li.search-menu__li
+                                a.search-menu__link(href="#") Лечение
+                            li.search-menu__li
+                                a.search-menu__link(href="#") Комплексное лечение
+                            li.search-menu__li
+                                a.search-menu__link(href="#") Операции
+                .index-r2
+                    .bl-3
+                        .bl-3__head
+                            .bl-3__icon(style="background-image:url('images/icon-book.png');width:63px;height:42px;")
+                            .bl-3__ttl Справочная<br>информация
+                        .bl-3__txt
+                            ul.list
+                                li.list__li
+                                    a.list__link(href="#") Важные телефоны института
+                                li.list__li
+                                    a.list__link(href="#") Горячие линии мед. помощи в Москве
+                                li.list__li
+                                    a.list__link(href="#") Аптеки и аптечные пункты
+                    .bl-3
+                        .bl-3__head
+                            .bl-3__icon(style="background-image:url('images/icon-flag.png');width:38px;height:35px;")
+                            .bl-3__ttl Важно знать<br>перед приёмом
+                        .bl-3__txt
+                            ul.list
+                                li.list__li
+                                    a.list__link(href="#") Правила внутреннего распорядка
+                                li.list__li
+                                    a.list__link(href="#") Правила записи на первичную консультацию
+                                li.list__li
+                                    a.list__link(href="#") График приема граждан
+                                li.list__li
+                                    a.list__link(href="#") Полисы ОМС
+                                li.list__li
+                                    a.list__link(href="#") Госпитализация пациентов
+                                li.list__li
+                                    a.list__link(href="#") Подготовка к диагностическим исследованиям
+                    a.bl-3.bl-3__img(href="#" style="background-image:url('images/img.jpg')")
+                        .bl-3__white
+                            .bl-3__ttl Памятка донору крови
+                            .bl-3__prev Как, где и зачем сдавать кровь
+                .index-r3
+                    .index-r3__head
+                        .index-r3__icon(style="background-image:url('images/icon-calendar.png');width:46px;height:38px;")
+                        .index-r3__ttl События<br>и новости
+                    .news
+                        .news__main(style="background-image:url('images/img2.jpg')")
+                            .news__inner
+                                .news__date 12.11.17
+                                a.news__ttl(href="news1.html") Завершился семинар о травмах
+                                .news__prev.
+                                    Завершился двухдневный практический семинар «Интенсивная терапия больных с острыми нарушениями мозгового кровообращения и пострадавших с сочетанной травмой»
+                        .news__item-list
+                            .news__item
+                                .news__date 27.10.17
+                                a.news__ttl(href="news2.html") 27 октября — всемирный день борьбы с инсультом
+                                .news__prev.
+                                    Приём вели ведущие специалисты института в области ультразвуковой диагностики, неврологии, сосудистой хирургии, кардиологии и нейрохирургии. За несколько часов был проведено более 300 консультаций.
+                            .news__item
+                                .news__date 25.10.17
+                                a.news__ttl(href="news3.html") Акция «Стоп-инсульт!»
+                                .news__prev.
+                                    Приём вели ведущие специалисты института в области ультразвуковой диагностики, неврологии, сосудистой хирургии, кардиологии и нейрохирургии.
+                            .news__all
+                                a.news__all-link(href="news.html") Показать все новости
+                .index-r4
+                    .index-r4__head
+                        .index-r4__icon(style="background-image:url('images/icon-hands.png');width:54px;height:42px;")
+                        .index-r4__ttl Организации-партнеры
+                    .partners
+                        .partners__big
+                            img(src="images/banner11.png")
+                        .partners__flex
+                            .partners__item
+                                img(src="images/banner10.png")
+                            .partners__item
+                                img(src="images/banner9.png")
+                            .partners__item
+                                img(src="images/banner4.png")
+                        .partners__flex.partners__pad
+                            .partners__item
+                                img(src="images/banner3.png")
+                            .partners__item
+                                img(src="images/banner7.png")
+                            .partners__item
+                                img(src="images/banner12.png")
+                            .partners__item
+                                img(src="images/banner8.png")
+                            .partners__item
+                                img(src="images/banner1.png")
+                        .partners__ttl При поддержке
+                        .partners__flex.partners__pad
+                            .partners__item
+                                img(src="images/banner5.png")
+                            .partners__item
+                                img(src="images/banner2.png")
+                            .partners__item
+                                img(src="images/banner6.png")
+                            .partners__item
+                                img(src="images/banner13.png")
+            .map
+                .map-ttl город Москва, Большая Сухаревская площадь,  дом 3
+                #map
+                include blocks/_map
+    //end workarea

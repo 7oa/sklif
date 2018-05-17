@@ -1,12 +1,19 @@
 .header-menu{
   display: flex;
   &__items{
-    margin-right: 10px;
+    margin-right: 40px;
   }
   &__links{
     color: $white;
-    &_active{
-      color: red;
+    font-size: 16px;
+    line-height: 35px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .5s;
+    &_active,
+    &:hover{
+      color: $white;
+      border-bottom: 4px solid $red;
     }
   }
 }

@@ -1,0 +1,38 @@
+.news-list{
+  margin-bottom: 80px;
+  &__item{
+    display: flex;
+    margin-bottom: 20px;
+    color: $gray-29;
+  }
+  &__img{
+    width: 215px;
+    height: 160px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    @include bg-img(contain);
+  }
+  &__content{
+    flex: 1 1 auto;
+  }
+  &__date{
+    color: $gray-62;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  &__ttl{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__prev{
+    font-size: 18px;
+    line-height: 24px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

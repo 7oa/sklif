@@ -2,12 +2,14 @@ html,
 body {
   height: 100%;
   background-color: $gray-f7;
+  min-width: 1200px;
 }
 .wrapper{
   display: flex;
   flex-direction: column;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
 }
 .content {
   flex: 1 0 auto;
@@ -25,4 +27,51 @@ textarea{
 .container{
   width: 1160px;
   margin: 0 auto;
+}
+.strong{
+  font-weight: 700;
+}
+.center{
+  text-align: center;
+}
+.input{
+  height: 40px;
+  background-color: $white;
+  border: 1px solid $gray-ae;
+  line-height: 40px;
+  color: $black;
+  font-size: 16px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  &_date{
+    background-image: url('images/input-date.png');
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+  }
+  &_time{
+    background-image: url('images/input-time.png');
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+  }
+}
+.submit{
+  display: inline-block;
+  cursor: pointer;
+}
+.submit_rb{
+  height: 40px;
+  border: 2px solid $red;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: .5s;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 27px;
+  &:hover{
+    background-color: $red;
+    color: $gray-f7;
+  }
 }

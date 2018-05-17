@@ -1,0 +1,27 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Новости';
+
+block title
+    title=activeMenu
+
+block content
+    .workarea
+        .page.page-inner
+            .container
+                .page-wrapper
+                    .page-content
+                        .news-detail
+                            .news-detail__date 27.04.2018
+                            p.strong.center Дорогие ветераны!
+                            p Коллектив НИИ СП им. Н.В. Склифосовского ДЗМ сердечно поздравляет Вас с 73-й годовщиной Победы в Великой Отечественной войне.
+                            p Желает крепкого здоровья и долголетия.
+                            p Низкий поклон за Ваше мужество и отвагу в борьбе за мир, в котором мы живем.
+
+                            .video.center.
+                                <video src="https://sklif.mos.ru/upload/news/uko/27-04/sklif-v-bitve-za-moskvu.mp4" width="720" height="576" controls=""></video>
+                    .page-sidebar
+                        include blocks/_last-news
+
+    //end workarea

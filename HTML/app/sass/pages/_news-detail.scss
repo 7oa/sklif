@@ -1,0 +1,32 @@
+.news-detail{
+  margin-bottom: 40px;
+  color: $gray-29;
+  &__date{
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: $gray-62;
+  }
+  ul{
+    padding-left: 20px;
+    list-style: disc;
+    line-height: 1.4;
+    li{
+      margin-bottom: 8px;
+    }
+  }
+  p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  table{
+    td{
+      border: 1px solid $gray-95;
+      padding: 10px;
+    }
+  }
+  .some-table{
+    margin-bottom: 20px;
+  }
+}

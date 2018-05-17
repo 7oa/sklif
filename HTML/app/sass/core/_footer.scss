@@ -4,7 +4,42 @@
   width: 100%;
   height: 590px;
   color: $gray-ee;
+  font-size: 16px;
+  line-height: 24px;
 }
 .footer-flex{
   display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  position: relative;
+}
+.footer-c1{
+  width: 320px;
+  flex: 0 0 auto;
+}
+.footer-c2{
+  width: 290px;
+  flex: 0 0 auto;
+}
+.footer-c3{
+  width: 400px;
+  flex: 0 0 auto;
+}
+.footer-bl{
+  margin-bottom: 25px;
+  &__label{
+    font-weight: 700;
+  }
+  &__label2{
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  &__txt2{
+    margin-bottom: 8px;
+  }
+}
+.footer-copyright{
+  position: absolute;
+  bottom: 25px;
+  left: 0;
 }

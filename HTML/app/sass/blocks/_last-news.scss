@@ -1,0 +1,48 @@
+.last-news{
+  background-color: $gray-f7;
+  border: 1px solid $gray-ae;
+  padding: 30px;
+  &__ttl{
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    color: $gray-29;
+    font-weight: 700;
+  }
+  &__list{
+    margin-bottom: 65px;
+  }
+  &__item{
+    display: block;
+    margin-bottom: 15px;
+    color: $gray-29;
+  }
+  &__prev{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__date{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  &__all{
+    width: 140px;
+    height: 40px;
+    border: 2px solid $gray-ae;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: $black;
+    background-color: transparent;
+    transition: .3s;
+    &:hover{
+      background-color: $gray-ae;
+      color: $gray-f7;
+    }
+  }
+}

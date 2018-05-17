@@ -1,3 +1,24 @@
 header.header
-    .container
-        include ../blocks/_header-menu
+    .header-l1.container
+        .header-top
+            a.header-logo(href="/")
+                .header-logo__img
+                .header-logo__label.
+                    Научно-исследовательский<br>
+                    институт скорой помощи<br>
+                    им. Н. В. Склифосовского
+            .header-ik
+                a.header-ik__link(href="#") Институт
+                br
+                a.header-ik__link.active(href="#") Клиника
+            .header-tel
+                .header-tel__label Приемная
+                .header-tel__number +7 (495) 680 67 22
+            .header-tel
+                .header-tel__label Справочная
+                .header-tel__number +7 (495) 680 41 54
+    .header-l2
+        .container
+            .header-menu
+                include ../blocks/_header-menu
+                a.header-login(href="#") Войти

@@ -1,0 +1,48 @@
+.services{
+  &__top{
+    background-color: $white;
+    border: 1px solid $gray-ae;
+    border-radius: 2px;
+    padding: 30px 40px;
+    margin-bottom: 10px;
+  }
+  &__ttl{
+    font-size: 30px;
+    line-height: 40px;
+    color: $gray-29;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  &__search{
+    padding: 0 80px 40px;
+  }
+  &__categories{
+    column-width: 300px;
+    column-count: 3;
+    column-gap: 30px;
+  }
+  &__item{
+    margin-bottom: 50px;
+  }
+  &__item-ttl{
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: $gray-29;
+  }
+  &__item-list{
+    li{
+      margin-bottom: 10px;
+    }
+    a{
+      text-decoration: none;
+      color: $gray-29;
+      transition: .3s;
+      &:hover{
+        color: $red;
+        text-decoration: underline;
+      }
+    }
+  }
+}

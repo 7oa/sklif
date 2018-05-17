@@ -1,0 +1,33 @@
+.appointment{
+  background-color: $gray-f7;
+  border: 1px solid $gray-ae;
+  padding: 30px;
+  &__ttl{
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 5px;
+    color: $gray-29;
+    font-weight: 700;
+  }
+  &__row{
+    margin-bottom: 10px;
+  }
+  &__row_flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__label{
+    color: $gray-76;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 3px;
+  }
+  &__col{
+    width: 45%;
+  }
+  &__input{}
+
+  &__submit{
+    margin-top: 20px;
+  }
+}
