@@ -1,0 +1,70 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Каталог услуг';
+
+block title
+    title=activeMenu
+
+block content
+    .workarea
+        .page.page-inner
+            .container
+                .page-wrapper
+                    .page-content
+                        .service-datail
+                            .service-datail__ttl Стереотаксическая  радиохирургия  с  применением  Гамма-ножа
+                            .service-datail__prev.
+                                Стереотаксическая  радиохирургия  с  применением  Гамма-ножа – нейрохирургий метод лечения заболеваний головного мозга с помощью облучения.
+
+
+                            div Перечень заболеваний включает:
+                            ul
+                                li доброкачественные и злокачественные опухоли головного мозга,
+                                li метастатическое поражение головного мозга,
+                                li артериовенозные и кавернозные мальформации,
+                                li невралгии тройничного и языкоглоточного нервов,
+                                li болезнь Паркинсона и эссенциальный тремор,
+                                li эпилепсию.
+
+                            div Преимущества метода:
+                            ul
+                                li Неинвазивность методики
+                                li Полная безболезненность во время облучения
+                                li Малый срок госпитализации - 1-2 дня
+                                li Минимальный риск вмешательства
+                                li Непрерывный контроль прогресса опухоли после облучения
+
+                            .bottom-banner
+                                .bottom-banner__ttl Как попасть на лечение в Центр радиохирургии?
+                                .bottom-banner__txt.
+                                    Лечение для жителей города Москвы выполнятся бесплатно<br>
+                                    Для определения наличия показаний к радиохирургической операции необходимо пройти консультацию нейрохирурга Центра радиохирургии. <br>
+                                    Для записи на консультацию следует позвонить по телефону 8-(926)-036-11-90.
+
+                    .page-sidebar
+                        .appointment
+                            .appointment__ttl Записаться на приём
+                            form.appointment__form
+                                .appointment__row
+                                    .appointment__label Имя, фамилия
+                                    .appointment__input
+                                        input.input(type="text" value="Александра Вавилова")
+                                .appointment__row
+                                    .appointment__label Номер телефона
+                                    .appointment__input
+                                        input.input(type="text" value="+7 912 345 67 89")
+                                .appointment__row.appointment__row_flex
+                                    .appointment__col
+                                        .appointment__label Дата
+                                        .appointment__input
+                                            input.input.input_date(type="text" value="29.11.17")
+                                    .appointment__col
+                                        .appointment__label Время
+                                        .appointment__input
+                                            input.input.input_time(type="text" value="11:30")
+                                .appointment__submit.center
+                                    input.submit.submit_rb(type="submit" value="Записаться")
+
+
+    //end workarea

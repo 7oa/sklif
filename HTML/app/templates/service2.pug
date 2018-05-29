@@ -1,0 +1,74 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Каталог услуг';
+
+block title
+    title=activeMenu
+
+block content
+    .workarea
+        .page.page-inner
+            .container
+                .page-wrapper
+                    .page-content
+                        .service-datail
+                            .service-datail__ttl УЗИ сосудов шеи
+                            .service-datail__prev.
+                                УЗИ  сосудов шеи  -  ультразвуковой вид исследования артерий и вен шеи, которые проникают в полость черепа и отвечают за нормальное питание  головного мозга и отток крови от него. Обследование является  полностью безопасным и высокоинформативным.
+                            p.
+                                УЗИ сосудов шеи может проводиться планово – у лиц групп риска.
+
+                            div Показания для проведения планового УЗИ исследования  сосудов шеи могут быть  следующие:
+                            ul
+                                li все люди старше 40 летнего возраста, особенно мужчины
+                                li страдающие гипертонической болезнью, сахарным диабетом
+                                li люди, в крови которых повышен холестерин и/или триглицериды, и/или липопротеины низкой и очень низкой плотности (определяется по данным липидограммы)
+                                li курильщики
+                                li имеющие порок сердца
+                                li страдающие аритмиями
+                                li при остеохондрозе шейного отдела
+                                li при головных болях
+
+                            div Возможно проведение экстренного исследования в случае:
+                            ul
+                                li появления интенсивной головной боли и/ или боли в шее
+                                li если головная боль стала более выраженной
+                                li появления головокружения, шаткости при ходьбе, тошноты, рвоты
+                                li появление слабости в руке и/ или ноге
+                                li нарушения зрения на один глаз
+
+                            .service-datail__img
+                                img(src="images/TEMP/s3.png")
+                                img(src="images/TEMP/s4.png")
+
+                            p.
+                                Одна из наиболее важных задач проведения УЗИ сосудов шеи- выявление атеросклеротических бляшек, которые могут быть опасны для мозгового кровотока и быть причиной развития инсульта. В случае, если бляшки значительно закупоривают просвет сосуда необходимо оперативное лечение.
+
+
+                    .page-sidebar
+                        .appointment
+                            .appointment__ttl Записаться на приём
+                            form.appointment__form
+                                .appointment__row
+                                    .appointment__label Имя, фамилия
+                                    .appointment__input
+                                        input.input(type="text" value="Александра Вавилова")
+                                .appointment__row
+                                    .appointment__label Номер телефона
+                                    .appointment__input
+                                        input.input(type="text" value="+7 912 345 67 89")
+                                .appointment__row.appointment__row_flex
+                                    .appointment__col
+                                        .appointment__label Дата
+                                        .appointment__input
+                                            input.input.input_date(type="text" value="29.11.17")
+                                    .appointment__col
+                                        .appointment__label Время
+                                        .appointment__input
+                                            input.input.input_time(type="text" value="11:30")
+                                .appointment__submit.center
+                                    input.submit.submit_rb(type="submit" value="Записаться")
+
+
+    //end workarea

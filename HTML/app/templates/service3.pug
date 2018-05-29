@@ -1,0 +1,65 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Каталог услуг';
+
+block title
+    title=activeMenu
+
+block content
+    .workarea
+        .page.page-inner
+            .container
+                .page-wrapper
+                    .page-content
+                        .service-datail
+                            .service-datail__ttl Эхокардиография
+                            .service-datail__prev.
+                                Эхокардиография- легкодоступный и безболезненный метод УЗИ, направленный на исследование полостей сердца, клапанного аппарата и крупных сердечных сосудов. Ультразвуковые волны проходя через разные отделы сердца в разной степени поглощаются тканями сердца и структурами крови, что позволяет формировать четкое изображение на экране УЗИ – сканера.
+                            .service-datail__img
+                                img(src="images/TEMP/s5.png")
+                                img(src="images/TEMP/s6.jpg")
+                                img(src="images/TEMP/s7.png")
+
+                            div Основные показания для проведения эхокардиографии:
+                            ul
+                                li Боли в грудной клетке.
+                                li Одышка в покое и при нагрузках, отеки на ногах и другие проявления сердечной недостаточности.
+                                li Быстрая утомляемость, сопровождающаяся обмороками и усиленным сердцебиением.
+                                li Чувство неритмичной работы сердца.
+                                li Снижение толерантности к физическим нагрузкам.
+                                li Перенесенный инфаркт миокарда и тромбоэмболия легочной артерии.
+                                li Перенесенный ишемический инсульт.
+                                li Шумы при выслушивании (аускультации) сердца.
+                                li Подозрения на врожденные и приобретенные сердечные пороки.
+                                li Перенесенный ревматизм.
+                                li Синюшность кожи в области лица, кончика носа и ушей, которая появляется либо усиливается при нагрузках.
+                                li Выраженное повышение артериального давления, особенно если высокое артериальное давление не корректируется приемом препаратов.
+
+
+                    .page-sidebar
+                        .appointment
+                            .appointment__ttl Записаться на приём
+                            form.appointment__form
+                                .appointment__row
+                                    .appointment__label Имя, фамилия
+                                    .appointment__input
+                                        input.input(type="text" value="Александра Вавилова")
+                                .appointment__row
+                                    .appointment__label Номер телефона
+                                    .appointment__input
+                                        input.input(type="text" value="+7 912 345 67 89")
+                                .appointment__row.appointment__row_flex
+                                    .appointment__col
+                                        .appointment__label Дата
+                                        .appointment__input
+                                            input.input.input_date(type="text" value="29.11.17")
+                                    .appointment__col
+                                        .appointment__label Время
+                                        .appointment__input
+                                            input.input.input_time(type="text" value="11:30")
+                                .appointment__submit.center
+                                    input.submit.submit_rb(type="submit" value="Записаться")
+
+
+    //end workarea
